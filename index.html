@@ -108,6 +108,10 @@
   <h1>Flashcard Generator</h1>
   <textarea id="qaInput" placeholder="Paste Q:/A: pairs here..."></textarea>
   <button onclick="generateFlashcards()">Generate Flashcards</button>
+  <label style="color: var(--card-text); margin-bottom: 10px;">
+    <input type="checkbox" id="stayOnCardToggle" />
+    Stay on current card
+  </label>
   <div id="cardContainer" class="flashcard" onclick="flipCard()" style="display:none;">
     <div class="card-inner">
       <div class="card-front" id="cardFront"></div>
@@ -149,13 +153,19 @@
 
     function flipCard() {
       const container = document.getElementById('cardContainer');
+      const stayOnCard = document.getElementById('stayOnCardToggle').checked;
+
       if (container.classList.contains('flipped')) {
-        currentIndex = (currentIndex + 1) % flashcards.length;
-        showCard();
+        container.classList.remove('flipped');
+        if (!stayOnCard) {
+          currentIndex = (currentIndex + 1) % flashcards.length;
+          showCard();
+        }
       } else {
         container.classList.add('flipped');
       }
     }
+
 
     function shuffle(array) {
       for (let i = array.length - 1; i > 0; i--) {
