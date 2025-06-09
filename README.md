@@ -81,12 +81,53 @@ You can modify:
 
 ---
 
+## 🤖 AI-Generated Flashcards
+
+Want to quickly generate flashcards using an AI chatbot? Copy and paste this customizable prompt:
+
+```
+Please create flashcards for [TOPIC/SUBJECT] in the following exact format:
+
+Q: [Question here]
+A: [Answer here]
+
+Requirements:
+- Use exactly "Q: " and "A: " prefixes (with the space after the colon)
+- Keep answers concise but complete
+- Focus on [specific aspects you want to study]
+- Create [number] flashcards
+- Make questions test [comprehension/memorization/application/etc.]
+
+Example topic: [Replace with your subject - e.g., "Python programming basics", "AWS services", "Spanish vocabulary", etc.]
+```
+
+**Example usage:**
+```
+Please create flashcards for AWS core services in the following exact format:
+
+Q: [Question here]
+A: [Answer here]
+
+Requirements:
+- Use exactly "Q: " and "A: " prefixes (with the space after the colon)
+- Keep answers concise but complete
+- Focus on service definitions and primary use cases
+- Create 15 flashcards
+- Make questions test basic understanding of what each service does
+
+Example topic: AWS core services like EC2, S3, RDS, Lambda, etc.
+```
+
+---
+
 ## 💡 Study Tips
 
-1. Type your answer before flipping to engage active recall
-2. Use exact wording for technical terms to build precision
-3. Enable "Stay on current card" to review difficult concepts
-4. Generate new randomized orders by clicking "Generate Flashcards" again
+1. **Type your answer before flipping** to engage active recall
+2. **Use exact wording** for technical terms to build precision
+3. **Enable "Stay on current card"** to review difficult concepts
+4. **Generate new randomized orders** by clicking "Generate Flashcards" again
+5. **Use AI prompts** to quickly create comprehensive study sets
+6. **Customize the AI prompt** for your specific learning goals
 
 ---
 
